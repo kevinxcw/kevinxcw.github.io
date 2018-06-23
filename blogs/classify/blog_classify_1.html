@@ -1,97 +1,52 @@
-<meta charset="utf-8"  />
-<!doctype html>
-<html>
-<head>
-<meta charset="gbk">
-<title>博客_XSamsara个人博客_算法</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../../css/base.css" rel="stylesheet">
-<link href="../../css/index.css" rel="stylesheet">
-<link href="../../css/m.css" rel="stylesheet">
-<script src="../../js/jquery.min.js" type="text/javascript"></script>
-<script src="../../js/jquery.easyfader.min.js"></script>
-<script src="../../js/scrollReveal.js"></script>
-<script src="../../js/common.js"></script>
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-</head>
-<body>
-<header> 
-	<thetitle></thetitle>
-</header>
-<div class="pagebg sh"></div>
-<div class="container">
-  <h1 class="t_nav">
-  	<a href="../../index.html" class="n1">网站首页</a>
-  	<a href="../blog_1.html" class="n1">博客</a>
-  	<a href="blog_classify_1.html" class="n2">题解</a>
-  </h1>
-  <!--blogsbox begin-->
-  <div class="blogsbox">
-    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
-    	<h3 class="blogtitle"><a href="/blogs/classify/分块/莫队/BZOJ3339/BZOJ3339.html">BZOJ 3339: Rmq Problem【莫队+树状数组】</a></h3>
-        <p class="blogtext"><strong>3339: Rmq Problem</strong>【题解】一眼就是莫队题，但是答案有的难求，其实可以二分这个答案，然后check用树状数组。 树状数组求的是小于mid的这个数有几个，当然不算重复。 如果get(mid)==mid的话，那么表示从1到mid都出现过，当然，A数组要+1。 否则，说明在1到mid中有一个数没出现过。... </p>
-        <div class="bloginfo">
-        	<ul>
-            	<li class="author"><a href="/about.html">XSamsara</a></li>
-            	<li class="lmname"><a href="/blogs/classify/分块/莫队/blog_莫队.html">莫队</a>，<a href="/blogs/classify/数据结构/树状数组/blog_树状数组.html">树状数组</a></li>
-            	<li class="timer">2018-6-16</li>
-        	</ul>
-        </div>
-    </div>
-    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
-      <h3 class="blogtitle"><a href="数据结构/主席树/BZOJ1803/BZOJ1803.html">BZOJ 1803: Spoj1487 Query on a tree III【DFS序+主席树】</a></h3>
-        <p class="blogtext"><strong>1803: Spoj1487 Query on a tree III</strong>【题解】 DFS序将树变成序列，然后用主席树维护就可以了。... </p>
-        <div class="bloginfo">
-        	<ul>
-            	<li class="author"><a href="../../about.html">XSamsara</a></li>
-            	<li class="lmname"><a href="数据结构/主席树/blog_主席树.html">主席树</a></li>
-            	<li class="timer">2018-6-12</li>
-        	</ul>
-        </div>
-    </div>
-    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
-      <h3 class="blogtitle"><a href="数据结构/主席树/BZOJ3524/BZOJ3524.html">BZOJ 3524: [Poi2014]Couriers【主席树】</a></h3>
-        <p class="blogtext"><strong>3524: [Poi2014]Couriers</strong>【题解】主席树的裸题，要找出现次数大于一半的，那么他肯定出现在当前的左子树或右子树中，就这样查找就可以了。... </p>
-        <div class="bloginfo">
-        	<ul>
-            	<li class="author"><a href="../../about.html">XSamsara</a></li>
-            	<li class="lmname"><a href="数据结构/主席树/blog_主席树.html">主席树</a></li>
-            	<li class="timer">2018-6-12</li>
-        	</ul>
-        </div>
-    </div>
-    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
-      <h3 class="blogtitle"><a href="图论/网络流/BZOJ1412/BZOJ1412.html">BZOJ 1412: [ZJOI2009]狼和羊的故事【最小割】</a></h3>
-      <p class="blogtext"><strong>1412: [ZJOI2009]狼和羊的故事</strong> 典型的最小割，那么怎么建图呢？ 首先肯定要建超级源和汇，然后肯定狼向羊建边（反过来也可以），若有空的的话就是（狼->空->空->羊）按照这个顺序建边就可以了。... </p>
-      <div class="bloginfo">
-        <ul>
-          <li class="author"><a href="../../about.html">XSamsara</a></li>
-          <li class="lmname"><a href="图论/网络流/blog_网络流.html">网络流</a></li>
-          <li class="timer">2018-6-11</li>
-        </ul>
-      </div>
-    </div>
-    <div class="pagelist">
-    	<b>1</b>&nbsp;
-    	<!--<a href="blog_题解_2.html">2</a>&nbsp;-->
-    	<a href="blog_classify_1.html">下一页</a>&nbsp;
-    	<a href="blog_classify_1.html">尾页</a></div>
-  </div>
-  <!--blogsbox end-->
-  <div class="sidebar">
-    <div class="links">
-      <h2 class="hometitle">分类</h2>
-      <ul>
-          <p><a href="图论\blog_图论.html"><strong>图论</strong></a></p>
-          <p><a href="分块\blog_分块.html"><strong>分块</strong></a></p>
-          <p><a href="数据结构\blog_数据结构.html"><strong>数据结构</strong></a></p>
-      </ul>
-    </div>
-  	<Besidebox></Besidebox>
-  </div>
-</div>
-<Theend></Theend>
-</body>
-</html>
+repeat: repeat-x; }
+.CodeMirror-lint-mark-error { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg=="); }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-marker-warning { background-position: center center; background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 16px; width: 16px; vertical-align: middle; position: relative; }
+.CodeMirror-lint-message-error, .CodeMirror-lint-message-warning { padding-left: 18px; background-position: left top; background-repeat: no-repeat; }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII="); }
+.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII="); }
+.CodeMirror-lint-marker-multiple { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC"); background-repeat: no-repeat; background-position: right bottom; width: 100%; height: 100%; }
+
+
+:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+figure { max-width: 100%; overflow-x: auto; margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.Code
