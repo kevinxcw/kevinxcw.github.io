@@ -1,36 +1,64 @@
-e: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
-.md-toc-content { position: relative; margin-left: 0px; }
-.md-toc::after, .md-toc-content::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
-.md-toc-h2 .md-toc-inner { margin-left: 2em; }
-.md-toc-h3 .md-toc-inner { margin-left: 4em; }
-.md-toc-h4 .md-toc-inner { margin-left: 6em; }
-.md-toc-h5 .md-toc-inner { margin-left: 8em; }
-.md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) {
-  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
-  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
-  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
-  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
-}
-a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
-.footnote-line a:not(.reversefootnote) { color: inherit; }
-.md-attr { display: none; }
-.md-fn-count::after { content: "."; }
-.md-tag { opacity: 0.5; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
-code { text-align: left; }
-h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
-a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: monospace; }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { tr
+<meta charset="utf-8"  />
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk">
+<title>博客_XSamsara个人博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="分块,XSamsara,XCW" />
+<link href="../../../css/base.css" rel="stylesheet">
+<link href="../../../css/index.css" rel="stylesheet">
+<link href="../../../css/m.css" rel="stylesheet">
+<script src="../../../js/jquery.min.js" type="text/javascript"></script>
+<script src="../../../js/jquery.easyfader.min.js"></script>
+<script src="../../../js/scrollReveal.js"></script>
+<script src="../../../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header> 
+	<thetitle></thetitle>
+</header>
+<div class="pagebg sh"></div>
+<div class="container">
+  <h1 class="t_nav">
+  	<a href="../../../index.html" class="n1">网站首页</a>
+  	<a href="../../blog_1.html" class="n1">博客</a>
+  	<a href="../blog_classify_1.html" class="n1">题解</a>
+  	<a href="blog_分块.html" class="n2">分块</a>
+  </h1>
+  <!--blogsbox begin-->
+  <div class="blogsbox">
+    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+    	<h3 class="blogtitle"><a href="/blogs/classify/分块/莫队/BZOJ3339/BZOJ3339.html">BZOJ 3339: Rmq Problem【莫队+树状数组】</a></h3>
+        <p class="blogtext"><strong>3339: Rmq Problem</strong>【题解】一眼就是莫队题，但是答案有的难求，其实可以二分这个答案，然后check用树状数组。 树状数组求的是小于mid的这个数有几个，当然不算重复。 如果get(mid)==mid的话，那么表示从1到mid都出现过，当然，A数组要+1。 否则，说明在1到mid中有一个数没出现过。... </p>
+        <div class="bloginfo">
+        	<ul>
+            	<li class="author"><a href="/about.html">XSamsara</a></li>
+            	<li class="lmname"><a href="/blogs/classify/分块/莫队/blog_莫队.html">莫队</a>，<a href="/blogs/classify/数据结构/树状数组/blog_树状数组.html">树状数组</a></li>
+            	<li class="timer">2018-6-16</li>
+        	</ul>
+        </div>
+    </div>
+    <div class="pagelist">
+    	<b>1</b>&nbsp;
+    	<!--<a href="blog_题解_2.html">2</a>&nbsp;-->
+    	<a href="blog_分块.html">下一页</a>&nbsp;
+    	<a href="blog_分块.html">尾页</a></div>
+  </div>
+  <!--blogsbox end-->
+  <div class="sidebar">
+    <div class="links">
+      <h2 class="hometitle">分类</h2>
+      <ul>
+			<p><a href="莫队\blog_莫队.html"><strong>莫队</strong></a></p>
+      </ul>
+    </div>
+  	<Besidebox></Besidebox>
+  </div>
+</div>
+<Theend></Theend>
+</body>
+</html>
